@@ -21,7 +21,7 @@ npx parcel build index.html
 
 ## Credits
 
-- Images from [Unsplash](https://unsplash.com/)
+- Images from my gallery
 
 ## Misc
 
