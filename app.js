@@ -1,13 +1,7 @@
-//import * as THREE from "three";
+import * as THREE from "three";
 import fragment from "./shader/fragment.glsl";
 import vertex from "./shader/vertex.glsl";
 import GUI from "lil-gui";
-
-
-const fs = require('fs');
-
-const fragmentShaderSource = fs.readFileSync('./shader/fragment.glsl', 'utf8');
-
 
 function clamp(number, min, max) {
   return Math.max(min, Math.min(number, max));

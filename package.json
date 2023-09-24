@@ -1,4 +1,13 @@
 {
+  "name": "distorted-pixels",
+  "version": "1.0.0",
+  "type": "module",
+  "transformers": {
+    ".glsl": [
+      "@parcel/transformer-glsl"
+    ]
+  },
+  "description": "A project with a distorted pixels effect",
   "dependencies": {
     "dat.gui": "^0.7.7",
     "lil-gui": "^0.16.0",
@@ -6,7 +15,31 @@
   },
   "devDependencies": {
     "@parcel/transformer-glsl": "^2.1.1",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
     "glslify-bundle": "^5.1.1",
-    "glslify-deps": "^1.3.2"
-  }
+    "glslify-deps": "1.3.1",
+    "style-loader": "^3.3.3",
+    "vite": "^4.4.9",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "dev": "vite"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [
+    "distorted",
+    "pixels",
+    "effect",
+    "webgl"
+  ],
+  "author": "cy53rg",
+  "license": ""
 }
